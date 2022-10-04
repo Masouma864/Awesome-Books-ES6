@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+:root {
+  --light-grey: #e4e4e4;
+  --dark-grey: #131313;
+  --white: #fff;
+  --dark-blue: #073763;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation */
+#navBar {
+  padding: 10px 30px 20px;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: var(--dark-grey) 3px solid;
+  padding: 5px 20px;
+}
+
+.navBar__heading {
+  font-family: bubblegum, sans-serif;
+  font-size: 20px;
+}
+
+.navBar__link {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.navBar__link:hover {
+  cursor: pointer;
+}
+
+.navBar__link--item {
+  font-family: bubblegum, sans-serif;
+  font-size: 17px;
+}
+
+#list,
+#add-new {
+  border-right: var(--dark-blue) 3px solid;
+  padding-right: 20px;
+}
+
+#list:hover,
+#add-new:hover,
+#contact-nav:hover {
+  color: var(--dark-blue);
+}
+
+/* Book List */
+#store {
+  padding: 50px 30px;
+}
+
+.store {
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.store--heading {
+  font-family: bubblegum, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  border: var(--dark-grey) solid 3px;
+}
+
+.newBook {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.bookDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: inherit;
+  gap: 80px;
+  padding: 8px 15px 8px 8px;
+}
+
+.bookTitleAuthor {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+/* Add book */
+#bookForm {
+  justify-content: center;
+}
+
+.bookForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+}
+
+.bookForm__heading {
+  font-family: bubblegum, sans-serif;
+  font-size: 35px;
+  align-self: center;
+}
+
+.bookForm__input {
+  padding: 4px 8px;
+  border: 3px solid var(--dark-grey);
+}
+
+.btnAdd {
+  align-self: flex-end;
+}
+
+/* Contact Information */
+#contact {
+  padding: 50px 30px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact__heading {
+  font-family: bubblegum, sans-serif;
+  font-size: 35px;
+}
+
+.contact__headline {
+  font-size: 22px;
+}
+
+.contact__info {
+  font-size: 18px;
+}
+
+/* Footer */
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 30px 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: var(--dark-grey) 3px solid;
+  padding: 5px 20px;
+}
+
+.footer__content {
+  font-family: bubblegum, sans-serif;
+  font-size: 20px;
+}
+
+/* Time and date */
+#time {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 30px 20px;
+}
+

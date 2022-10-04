@@ -1,0 +1,48 @@
+/* btn */
+.btn,
+.btnRemove {
+  border: none;
+  background: none;
+  outline: var(--dark-grey) 3px solid;
+  box-shadow: 4px 5px var(--dark-grey);
+  padding: 3px 6px;
+}
+
+.btnAdd {
+  padding: 3px 12px;
+}
+
+.btnAdd,
+.btnRemove:hover {
+  cursor: pointer;
+}
+
+/* Bkg color of book items */
+.newBook:nth-child(even) {
+  background: var(--white);
+}
+
+.newBook:nth-child(odd) {
+  background: var(--light-grey);
+}
+
+/* lines */
+.dark-line {
+  height: 2px;
+  width: 15vw;
+  background: var(--dark-grey);
+  margin: 15px 0;
+}
+
+/* Display */
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-flex {
+  display: flex;
+}
