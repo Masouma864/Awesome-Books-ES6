@@ -1,73 +1,30 @@
-import Store from './modules/Store.js';
-import UI from './modules/UI.js';
-import Book from './modules/book.js';
-import './modules/date.js';
+import Book, {
+  booksSection,
+  inputTitle,
+  inputAuthor,
+} from './modules/books.js';
+import { navigation } from './modules/navigation.js';
+import { DateTime } from './modules/date.js';
 
-// EVENT TO DISPLAY BOOKS
-document.addEventListener('DOMContentLoaded', UI.displayBooks);
-// EVENT TO ADD A BOOK
-document.querySelector('.bookForm').addEventListener('submit', (e) => {
-  e.preventDefault();
-  // get form values
-  const titleInput = document.querySelector('.title').value;
-  const authorInput = document.querySelector('.author').value;
-  const book = new Book(titleInput, authorInput);
-  // ADD BOOK TO LIST
-  UI.addBookToList(book);
-  // ADD BOOK TO STORE
-  Store.addBook(book);
-  // CLEAR FIELDS
-  UI.clearFields();
-});
-// EVENT DELETE
-document.querySelector('.books').addEventListener('click', (e) => {
-  if (e.target.className === 'btnRemove') {
-    const book = e.target.parentElement;
-    Store.removeBook(book);
-    UI.deleteBook(e.target);
-  }
+const addBtn = document.getElementById('add-btn');
+
+window.onload = Book.displayBooks();
+window.onload = navigation();
+addBtn.addEventListener('click', () => {
+  booksSection.innerHTML = '';
+  Book.addBook();
+  Book.displayBooks();
+  inputTitle.value = '';
+  inputAuthor.value = '';
 });
 
-// Navigation bar
-const navLink = document.getElementsByClassName('navBar__link--item');
-[...navLink].forEach((link, index) => {
-  link.addEventListener('click', () => {
-    // List
-    if (index === 0) {
-      document.getElementById('store').classList.add('display-block');
-      document.getElementById('store').classList.remove('display-none');
+// Display date and Time
 
-      document.getElementById('bookForm').classList.add('display-none');
-      document.getElementById('bookForm').classList.remove('display-flex');
-      document.getElementById('bookForm').classList.remove('display-block');
-
-      document.getElementById('contact').classList.add('display-none');
-      document.getElementById('contact').classList.remove('display-block');
-      document.getElementById('contact').classList.remove('display-flex');
-    }
-    if (index === 1) {
-      document.getElementById('store').classList.remove('display-block');
-      document.getElementById('store').classList.remove('display-flex');
-      document.getElementById('store').classList.add('display-none');
-
-      document.getElementById('bookForm').classList.add('display-flex');
-      document.getElementById('bookForm').classList.remove('display-none');
-
-      document.getElementById('contact').classList.add('display-none');
-      document.getElementById('contact').classList.remove('display-flex');
-      document.getElementById('contact').classList.remove('display-block');
-    }
-    if (index === 2) {
-      document.getElementById('store').classList.add('display-none');
-      document.getElementById('store').classList.remove('display-block');
-      document.getElementById('store').classList.remove('display-flex');
-
-      document.getElementById('bookForm').classList.add('display-none');
-      document.getElementById('bookForm').classList.remove('display-flex');
-      document.getElementById('bookForm').classList.remove('display-block');
-
-      document.getElementById('contact').classList.add('display-block');
-      document.getElementById('contact').classList.remove('display-none');
-    }
-  });
-});
+const timeDate = document.getElementById('date');
+const displayDateAndTime = () => {
+  const dt = DateTime.now();
+  timeDate.textContent = dt
+    .setLocale('en-US')
+    .toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+};
+setInterval(displayDateAndTime, 1000);
