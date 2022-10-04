@@ -1,71 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/utilise.css" />
+    <title>Awesome Books</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/utilise.css">
-  <title>Awesome Books</title>
-</head>
-
-<body>
-
-  <header id="navBar">
-    <div class="navBar">
-      <h1 class="navBar__heading">Awesome Books</h1>
-      <nav class="navBar__link">
-        <p class="navBar__link--item" id="list">List</p>
-        <p class="navBar__link--item" id="add-new">Add New</p>
-        <p class="navBar__link--item" id="contact-nav">Contact</p>
-      </nav>
-    </div>
-  </header>
-
-  <section id="time">
-    <div class="time"></div>
-  </section>
-
-
-  <section id="store">
-    <div class="store">
-      <div class="store__header">
-        <h1 class="store--heading">Awesome Books</h1>
+  <body>
+    <header id="navBar">
+      <div class="navBar">
+        <h1 class="navBar__heading">Awesome Books</h1>
+        <nav class="navBar__link">
+          <p class="navBar__link--item" id="list">List</p>
+          <p class="navBar__link--item" id="add-new">Add New</p>
+          <p class="navBar__link--item" id="contact-nav">Contact</p>
+        </nav>
       </div>
-      <div class="books"></div>
-    </div>
-  </section>
+    </header>
 
-  <section id="bookForm" class="display-none">
-    <form class="bookForm">
-      <h2 class="bookForm__heading">Add a new book</h2>
-      <input class="bookForm__input title" type="text" name="title" id="title" placeholder="Title" required />
-      <input class="bookForm__input author" type="text" id="author" name="author" placeholder="Author" required />
-      <button class="btn btnAdd" type="submit">Add</button>
-    </form>
-  </section>
+    <section id="time">
+      <div class="time"></div>
+    </section>
 
-  <section id="contact" class="display-none">
-    <div class="contact">
-      <h1 class="contact__heading">Contact Information</h1>
-      <p class="contact__headline">Do you have any question or you just want to say "Hello"?<br>You can reach out to us!
-      </p>
-      <ul class="contact__info">
-        <li class="contact__info--item">Our email: mail@address.com</li>
-        <li class="contact__info--item">Our phone number: 1234567890</li>
-        <li class="contact__info--item">Our address: Street name, 22, 223344 City, Country</li>
-      </ul>
-    </div>
-  </section>
+    <section id="store">
+      <div class="store">
+        <div class="store__header">
+          <h1 class="store--heading">Awesome Books</h1>
+        </div>
+        <div class="books"></div>
+      </div>
+    </section>
 
-  <footer id="footer">
-    <div class="footer">
-      <p class="footer__content">Copyright</p>
-    </div>
-  </footer>
+    <section id="bookForm" class="display-none">
+      <form class="bookForm">
+        <h2 class="bookForm__heading">Add a new book</h2>
+        <input
+          class="bookForm__input title"
+          type="text"
+          name="title"
+          id="title"
+          placeholder="Title"
+          required
+        />
+        <input
+          class="bookForm__input author"
+          type="text"
+          id="author"
+          name="author"
+          placeholder="Author"
+          required
+        />
+        <button class="btn btnAdd" type="submit">Add</button>
+      </form>
+    </section>
 
-  <script src="index.js" type="module"></script>
-</body>
+    <section id="contact" class="display-none">
+      <div class="contact">
+        <h1 class="contact__heading">Contact Information</h1>
+        <p class="contact__headline">
+          Do you have any question or you just want to say "Hello"?<br />You can
+          reach out to us!
+        </p>
+        <ul class="contact__info">
+          <li class="contact__info--item">Our email: mail@address.com</li>
+          <li class="contact__info--item">Our phone number: 1234567890</li>
+          <li class="contact__info--item">
+            Our address: Street name, 22, 223344 City, Country
+          </li>
+        </ul>
+      </div>
+    </section>
 
+    <footer id="footer">
+      <div class="footer">
+        <p class="footer__content">Copyright</p>
+      </div>
+    </footer>
+
+    <script src="index.js" type="module"></script>
+  
+  </body>
 </html>

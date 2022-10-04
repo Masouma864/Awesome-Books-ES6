@@ -46,7 +46,7 @@ npx hint .
 2. For tracking linter errors in CSS or SASS files run:
 
 ```bash
-npx stylelint "\*_/_.{css,scss}"
+npx stylelint "**/*.{css,scss}"
 ```
 
 3. For tracking linter errors in JavaScript files run:
