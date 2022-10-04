@@ -53,6 +53,4 @@ export default class Books {
     localStorage.setItem('coward', JSON.stringify(booksList));
     Books.displayBooks();
   };
-
-
 }
