@@ -20,7 +20,7 @@ To get the content of this project locally you need to run the following command
 ### Setup
 1. Download the **Zip** file or clone the repo with:
 ```bash
-git clone https://github.com/masouma-modarresi/Awesome-Books-ES6.git
+git clone https://github.com/Masouma864/Awesome-Books-ES6.git
 
 ```
 3. To access cloned directory run:
@@ -61,7 +61,7 @@ npx eslint .
 
 #### Masouma Modarresi
 
-[GitHub](https://github.com/masouma2020) | [LinkedIn](https://www.linkedin.com/in/masouma-m-9572a41b5/)
+[GitHub](https://github.com/Masouma864) | [LinkedIn](https://www.linkedin.com/in/masouma-m-9572a41b5/)
 
 ## Show your support
 
