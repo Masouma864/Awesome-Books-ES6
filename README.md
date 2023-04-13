@@ -13,6 +13,9 @@
 
 To get the content of this project locally you need to run the following commands in your terminal.
 
+## Live Demo
+[Live Demo](https://clinquant-rabanadas-d3e7c5.netlify.app/)
+
 ### Prerequisites
 - IDE(code editor) like: **Vscode**, **Sublime**, etc. 
 - [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/)
@@ -61,7 +64,8 @@ npx eslint .
 
 #### Masouma Modarresi
 
-[GitHub](https://github.com/Masouma864) | [LinkedIn](https://www.linkedin.com/in/masouma-m-9572a41b5/)
+[GitHub](https://github.com/Masouma864) 
+[LinkedIn](https://www.linkedin.com/in/masouma-modarresi/)
 
 ## Show your support
 
